@@ -12,8 +12,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:5173", // Vite default
   "http://localhost:3000", // React default
-  // जब आप Vercel पर लाइव करेंगे, तो अपना Vercel URL यहाँ जोड़ें:
-  // "https://your-vercel-app-url.vercel.app"
+  "https://near-me-ai.vercel.app"
 ];
 
 app.use(cors({
