@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+
+
+/* --- SIGNUP MODAL UPDATES --- */
+.signup-modal { background: var(--surface); width: 100%; max-width: 420px; border-radius: var(--radius-xl); padding: 32px; position: relative; box-shadow: var(--shadow-lg); animation: slideUp 0.4s var(--bounce); }
+.signup-header { text-align: center; margin-bottom: 24px; }
+.signup-logo { display: flex; justify-content: center; margin-bottom: 16px; }
+.signup-header h2 { font-family: "Space Grotesk", sans-serif; font-size: 24px; margin: 0 0 8px; }
+.signup-header p { color: var(--muted); font-size: 14px; margin: 0; line-height: 1.5; }
+.signup-form { display: flex; flex-direction: column; gap: 16px; }
+.input-group { display: flex; flex-direction: column; gap: 6px; }
+.input-group label { font-size: 13px; font-weight: 600; color: var(--text); }
+.input-group input { padding: 12px 16px; border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 14px; font-family: inherit; transition: 0.2s; outline: none; }
+.input-group input:focus { border-color: var(--primary); box-shadow: var(--shadow-glow); }
+.signup-btn { width: 100%; padding: 14px; border-radius: var(--radius-md); background: var(--primary); color: white; font-size: 16px; font-weight: 600; margin-top: 8px; transition: 0.2s; }
+.signup-btn:hover { background: var(--primary-hover); transform: translateY(-2px); box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2); }
+.signup-error { background: #fef2f2; color: #dc2626; padding: 10px; border-radius: 8px; font-size: 13px; text-align: center; border: 1px solid #fecaca; }
+
+/* Google Button Styling */
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px;
+  background: #ffffff;
+  border: 1px solid #dadce0;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 600;
+  color: #3c4043;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.google-btn:hover {
+  background: #f8f9fa;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.3);
+}
+.google-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Divider for "OR" */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 4px 0;
+}
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid var(--border);
+}
+.divider span {
+  padding: 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
